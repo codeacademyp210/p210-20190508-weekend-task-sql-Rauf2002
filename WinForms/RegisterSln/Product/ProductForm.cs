@@ -28,7 +28,7 @@ namespace Product
             Match colorMatch = letters.Match(colorBox.Text);
 
 
-            Regex numbers = new Regex(@"^[a-zA-Z0-9_]+$");
+            Regex numbers = new Regex(@"^[0-9_]+$");
             Match priceMatch = numbers.Match(priceBox.Text);
             Match barcodeMatch = numbers.Match(barcodeBox.Text);
             Match stockMatch = numbers.Match(stockBox.Text);
